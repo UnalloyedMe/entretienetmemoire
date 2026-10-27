@@ -32,61 +32,6 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://entretienetmemoire.laconciergeriedevero.fr/#business",
-  "name": "Entretien et Mémoire",
-  "alternateName": "La Conciergerie de Véro",
-  "description": "Service de nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer.",
-  "url": "https://entretienetmemoire.laconciergeriedevero.fr/",
-  "telephone": "+33615075833",
-  "email": "laconciergeriedevero@gmail.com",
-  "image": "https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg",
-  "priceRange": "€€",
-  "areaServed": [
-    {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 49.2942,
-        "longitude": -0.3783
-      },
-      "geoRadius": "20000"
-    },
-    {
-      "@type": "City",
-      "name": "Caen"
-    },
-    {
-      "@type": "City",
-      "name": "Douvres-la-Délivrande"
-    },
-    {
-      "@type": "City",
-      "name": "Luc-sur-Mer"
-    },
-    {
-      "@type": "City",
-      "name": "Bernière-sur-Mer"
-    },
-    {
-      "@type": "City",
-      "name": "Ranville"
-    },
-    {
-      "@type": "City",
-      "name": "Mathieu"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 49.2942,
-    "longitude": -0.3783
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -99,7 +44,7 @@
     },
     {
       "@type": "Question",
-      "name": "Est-il possible de commande une prestation sans se déplacer ?",
+      "name": "Est-il possible de commander une prestation sans se déplacer ?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Bien sûr, nous convenons du moyen de paiement et de communication lors de la prise de contact, pour convenir au mieux à vos besoins."
@@ -115,7 +60,7 @@
     },
     {
       "@type": "Question",
-      "name": "Comment s'organise l'entretient régulier ?",
+      "name": "Comment s'organise l'entretien régulier ?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Lors de la prise de contact, on va établir vos besoins et le rythme d'entretien nécessaire, pour ensuite établir le prix et les modalités de paiement."
@@ -126,7 +71,7 @@
       "name": "En quoi consiste la preuve de l'intervention ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A la fin de l'intervention, on vous envoie (en fonction du moyen de communication convenu au préalable) des photos compte rendu avant/après détaillées. Pour que vous vous rendiez compte au mieux du travail réalisé."
+        "text": "À la fin de l'intervention, on vous envoie (en fonction du moyen de communication convenu au préalable) des photos compte rendu avant/après détaillées. Pour que vous vous rendiez compte au mieux du travail réalisé."
       }
     },
     {
@@ -162,11 +107,12 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
 <header>
   <nav>
     <a href="../index.html" class="logo">Entretien et <span>Mémoire</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="menu-principal">
       <li><a href="prestations.html">Prestations</a></li>
       <li><a href="zone-intervention.html">Zone d'intervention</a></li>
       <li><a href="avis.html">Avis</a></li>
@@ -175,9 +121,10 @@
     <div class="nav-cta">
       <a href="contact.html" class="btn btn-ghost">Nous contacter</a>
     </div>
-    <button class="burger" aria-label="Menu">☰</button>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
   </nav>
 </header>
+<main id="contenu">
 
 <div class="breadcrumb">
   <div class="wrap"><a href="../index.html">Accueil</a> / FAQ</div>
@@ -186,7 +133,7 @@
 <section class="page-header">
   <div class="wrap" data-reveal style="text-align:center; margin:0 auto;">
     <span class="eyebrow">Questions fréquentes</span>
-    <h1>Toutes les réponses à vos questions</h1>
+    <h1>Questions fréquentes sur l'entretien de sépultures à distance</h1>
   </div>
 </section>
 
@@ -198,10 +145,10 @@
       <div class="faq left">
         <div class="faq-item open">
           <button>Comment faire si la sépulture à entretenir se situe en dehors de la zone d'intervention ?<span class="plus">+</span></button>
-          <div class="a"><p>La zone d'intervention est à valeur indicative, en fonction de la localisation de la sépulture, des exceptions peuvent être faites au cas par cas.</p></div>
+          <div class="a"><p>La <a href="zone-intervention.html">zone d'intervention</a> est à valeur indicative, en fonction de la localisation de la sépulture, des exceptions peuvent être faites au cas par cas.</p></div>
         </div>
         <div class="faq-item">
-          <button>Est-il possible de commande une prestation sans se déplacer ?<span class="plus">+</span></button>
+          <button>Est-il possible de commander une prestation sans se déplacer ?<span class="plus">+</span></button>
           <div class="a"><p>Bien sûr, nous convenons du moyen de paiement et de communication lors de la prise de contact, pour convenir au mieux à vos besoins.</p></div>
         </div>
       </div>
@@ -212,12 +159,12 @@
       <div class="faq left">
         <div class="faq-item">
           <button>De quoi dépendent les tarifs ? <span class="plus">+</span></button>
-          <div class="a"><p>Les tarifs indiqués sur le site sont les tarifs minimums, bien sûr en fonction de la taille, du type de pierre et du nombre
+          <div class="a"><p>Les tarifs indiqués sur le site (voir les <a href="prestations.html">prestations</a>) sont les tarifs minimums, bien sûr en fonction de la taille, du type de pierre et du nombre
 			de tombes à entretenir.
 		  </p></div>
         </div>
         <div class="faq-item">
-          <button>Comment s'organise l'entretient régulier ?<span class="plus">+</span></button>
+          <button>Comment s'organise l'entretien régulier ?<span class="plus">+</span></button>
           <div class="a"><p>Lors de la prise de contact, on va établir vos besoins et le rythme d'entretien nécessaire, pour ensuite établir le prix 
 			et les modalités de paiement.</p></div>
         </div>
@@ -229,7 +176,7 @@
       <div class="faq left">
         <div class="faq-item">
           <button>En quoi consiste la preuve de l'intervention ? <span class="plus">+</span></button>
-          <div class="a"><p>A la fin de l'intervention, on vous envoie (en fonction du moyen de communication convenu au préalable) des photos compte rendu avant/après détaillées.
+          <div class="a"><p>À la fin de l'intervention, on vous envoie (en fonction du moyen de communication convenu au préalable) des photos compte rendu avant/après détaillées.
 			Pour que vous vous rendiez compte au mieux du travail réalisé.
 		  </p></div>
         </div>
@@ -254,6 +201,7 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -273,7 +221,7 @@
         <ul>
           <li><a href="mailto:laconciergeriedevero@gmail.com">laconciergeriedevero@gmail.com</a></li>
           <li><a href="tel:0615075833">06 15 07 58 33</a></li>
-          <li><a href="contact.html">Formulaire de contact</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
         </ul>
       </div>
       <div>

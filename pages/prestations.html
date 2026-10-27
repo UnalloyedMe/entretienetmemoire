@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nos prestations d'entretien de tombes | Entretien et Mémoire</title>
+<title>Prestations et tarifs de nettoyage de tombe | Entretien et Mémoire</title>
 <meta name="description" content="Nettoyage de la pierre, fleurissement de saison, entretien régulier et préparation avant une date importante : le détail de nos prestations et tarifs.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://entretienetmemoire.laconciergeriedevero.fr/pages/prestations.html">
@@ -15,14 +15,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Entretien et Mémoire">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="Nos prestations d'entretien de tombes | Entretien et Mémoire">
+<meta property="og:title" content="Prestations et tarifs de nettoyage de tombe | Entretien et Mémoire">
 <meta property="og:description" content="Nettoyage de la pierre, fleurissement de saison, entretien régulier et préparation avant une date importante : le détail de nos prestations et tarifs.">
 <meta property="og:url" content="https://entretienetmemoire.laconciergeriedevero.fr/pages/prestations.html">
 <meta property="og:image" content="https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nos prestations d'entretien de tombes | Entretien et Mémoire">
+<meta name="twitter:title" content="Prestations et tarifs de nettoyage de tombe | Entretien et Mémoire">
 <meta name="twitter:description" content="Nettoyage de la pierre, fleurissement de saison, entretien régulier et préparation avant une date importante : le détail de nos prestations et tarifs.">
 <meta name="twitter:image" content="https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,69 +32,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://entretienetmemoire.laconciergeriedevero.fr/#business",
-  "name": "Entretien et Mémoire",
-  "alternateName": "La Conciergerie de Véro",
-  "description": "Service de nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer.",
-  "url": "https://entretienetmemoire.laconciergeriedevero.fr/",
-  "telephone": "+33615075833",
-  "email": "laconciergeriedevero@gmail.com",
-  "image": "https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg",
-  "priceRange": "€€",
-  "areaServed": [
-    {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 49.2942,
-        "longitude": -0.3783
-      },
-      "geoRadius": "20000"
-    },
-    {
-      "@type": "City",
-      "name": "Caen"
-    },
-    {
-      "@type": "City",
-      "name": "Douvres-la-Délivrande"
-    },
-    {
-      "@type": "City",
-      "name": "Luc-sur-Mer"
-    },
-    {
-      "@type": "City",
-      "name": "Bernières-sur-Mer"
-    },
-    {
-      "@type": "City",
-      "name": "Ranville"
-    },
-    {
-      "@type": "City",
-      "name": "Mathieu"
-    }
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 49.2942,
-    "longitude": -0.3783
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Entretien de sépultures",
   "provider": {
-    "@id": "https://entretienetmemoire.laconciergeriedevero.fr/#business"
+    "@type": "LocalBusiness",
+    "@id": "https://entretienetmemoire.laconciergeriedevero.fr/#business",
+    "name": "Entretien et Mémoire"
   },
   "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Calvados"
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.2942,
+      "longitude": -0.3783
+    },
+    "geoRadius": "20000"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -102,22 +54,28 @@
     "itemListElement": [
       {
         "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "38",
         "itemOffered": {
           "@type": "Service",
           "name": "Nettoyage de tombe",
           "description": "Nettoyage manuel de la pierre, désherbage et remise en état."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 38.0,
+          "priceCurrency": "EUR"
         }
       },
       {
         "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "29",
         "itemOffered": {
           "@type": "Service",
           "name": "Fleurissement",
           "description": "Composition florale de saison, dépôt et entretien."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 29.0,
+          "priceCurrency": "EUR"
         }
       },
       {
@@ -130,12 +88,15 @@
       },
       {
         "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "50",
         "itemOffered": {
           "@type": "Service",
           "name": "Préparation avant une date importante",
           "description": "Remise en état avant une commémoration, la Toussaint ou une visite familiale."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 50.0,
+          "priceCurrency": "EUR"
         }
       }
     ]
@@ -164,11 +125,12 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
 <header>
   <nav>
     <a href="../index.html" class="logo">Entretien et <span>Mémoire</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="menu-principal">
       <li><a href="prestations.html" class="active">Prestations</a></li>
       <li><a href="zone-intervention.html">Zone d'intervention</a></li>
       <li><a href="avis.html">Avis</a></li>
@@ -177,9 +139,10 @@
     <div class="nav-cta">
       <a href="contact.html" class="btn btn-ghost">Nous contacter</a>
     </div>
-    <button class="burger" aria-label="Menu">☰</button>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
   </nav>
 </header>
+<main id="contenu">
 
 <div class="breadcrumb">
   <div class="wrap"><a href="../index.html">Accueil</a> / Prestations</div>
@@ -188,8 +151,9 @@
 <section class="page-header">
   <div class="wrap" data-reveal>
     <span class="eyebrow">Nos prestations</span>
-    <h1>Le détail de nos prestations</h1>
+    <h1>Nos prestations de nettoyage, fleurissement et entretien de tombes</h1>
     <p class="lead">Vous trouverez ici le détail fourni de tous les services disponibles.</p>
+    <p class="lead">Les tarifs affichés sont des tarifs minimums : le prix dépend de la taille, du type de pierre et du nombre de tombes à entretenir (<a href="faq.html">voir la FAQ</a>). Vérifiez aussi que votre cimetière se trouve dans notre <a href="zone-intervention.html">zone d'intervention</a>.</p>
   </div>
 </section>
 
@@ -243,13 +207,14 @@
 <section class="alt">
   <div class="cta-band" data-reveal>
     <h2>Une prestation adaptée à chaque situation</h2>
-    <p>Si vous êtes interessé ou si vous avez des questions !</p>
+    <p>Si vous êtes intéressé ou si vous avez des questions !</p>
     <div class="hero-actions" style="justify-content:center;">
       <a href="contact.html" class="btn btn-primary">Commander une prestation</a>
     </div>
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -269,7 +234,7 @@
         <ul>
           <li><a href="mailto:laconciergeriedevero@gmail.com">laconciergeriedevero@gmail.com</a></li>
           <li><a href="tel:0615075833">06 15 07 58 33</a></li>
-          <li><a href="contact.html">Formulaire de contact</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
         </ul>
       </div>
       <div>

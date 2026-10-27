@@ -402,3 +402,8 @@ footer a:hover{color:var(--or);}
   .cta-band{padding:40px 24px; margin:0 16px;}
   .contact-grid{grid-template-columns:1fr; gap:40px;}
 }
+
+/* -------- accessibilité : lien d'évitement et focus clavier -------- */
+.skip-link{position:absolute; left:-9999px; top:8px; z-index:1000; background:#fff; color:#000; padding:10px 16px; border-radius:6px;}
+.skip-link:focus{left:8px;}
+a:focus-visible, button:focus-visible, [role="slider"]:focus-visible{outline:2px solid var(--mousse, #7da06a); outline-offset:3px;}

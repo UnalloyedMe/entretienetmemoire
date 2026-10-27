@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-links');
   if (burger && navLinks) {
     burger.addEventListener('click', () => {
-      navLinks.classList.toggle('mobile-open');
+      const open = navLinks.classList.toggle('mobile-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
 
@@ -35,13 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (slider && after && handle) {
     let dragging = false;
 
-    function setPos(clientX) {
-      const rect = slider.getBoundingClientRect();
-      let pct = ((clientX - rect.left) / rect.width) * 100;
+    function setPct(pct) {
       pct = Math.max(0, Math.min(100, pct));
       after.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
       handle.style.left = pct + '%';
+      handle.setAttribute('aria-valuenow', Math.round(pct));
     }
+    function setPos(clientX) {
+      const rect = slider.getBoundingClientRect();
+      setPct(((clientX - rect.left) / rect.width) * 100);
+    }
+    handle.addEventListener('keydown', (e) => {
+      const cur = Number(handle.getAttribute('aria-valuenow')) || 50;
+      const step = { ArrowLeft: -5, ArrowDown: -5, ArrowRight: 5, ArrowUp: 5 }[e.key];
+      if (step !== undefined) { e.preventDefault(); setPct(cur + step); }
+      else if (e.key === 'Home') { e.preventDefault(); setPct(0); }
+      else if (e.key === 'End') { e.preventDefault(); setPct(100); }
+    });
     handle.addEventListener('pointerdown', () => dragging = true);
     window.addEventListener('pointerup', () => dragging = false);
     window.addEventListener('pointermove', (e) => { if (dragging) setPos(e.clientX); });
@@ -50,11 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- accordéon FAQ ---------- */
   document.querySelectorAll('.faq-item button').forEach((btn) => {
+    btn.setAttribute('aria-expanded', 'false');
     btn.addEventListener('click', () => {
       const item = btn.parentElement;
       const wasOpen = item.classList.contains('open');
       item.parentElement.querySelectorAll('.faq-item').forEach((i) => i.classList.remove('open'));
       if (!wasOpen) item.classList.add('open');
+      item.parentElement.querySelectorAll('.faq-item button').forEach((b) => {
+        b.setAttribute('aria-expanded', b.parentElement.classList.contains('open') ? 'true' : 'false');
+      });
     });
   });
 

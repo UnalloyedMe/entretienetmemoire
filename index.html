@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Entretien de tombes à distance en Calvados | Entretien et Mémoire</title>
-<meta name="description" content="Nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer. Devis rapide, photos après chaque intervention.">
+<meta name="description" content="Nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer. Photos avant/après à chaque intervention.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://entretienetmemoire.laconciergeriedevero.fr/">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -16,14 +16,14 @@
 <meta property="og:site_name" content="Entretien et Mémoire">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Entretien de tombes à distance en Calvados | Entretien et Mémoire">
-<meta property="og:description" content="Nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer. Devis rapide, photos après chaque intervention.">
+<meta property="og:description" content="Nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer. Photos avant/après à chaque intervention.">
 <meta property="og:url" content="https://entretienetmemoire.laconciergeriedevero.fr/">
 <meta property="og:image" content="https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Entretien de tombes à distance en Calvados | Entretien et Mémoire">
-<meta name="twitter:description" content="Nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer. Devis rapide, photos après chaque intervention.">
+<meta name="twitter:description" content="Nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer. Photos avant/après à chaque intervention.">
 <meta name="twitter:image" content="https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,13 +36,11 @@
   "@type": "LocalBusiness",
   "@id": "https://entretienetmemoire.laconciergeriedevero.fr/#business",
   "name": "Entretien et Mémoire",
-  "alternateName": "La Conciergerie de Véro",
   "description": "Service de nettoyage, fleurissement et entretien de sépultures dans le Calvados pour les familles qui ne peuvent pas se déplacer.",
   "url": "https://entretienetmemoire.laconciergeriedevero.fr/",
   "telephone": "+33615075833",
   "email": "laconciergeriedevero@gmail.com",
   "image": "https://entretienetmemoire.laconciergeriedevero.fr/img/og-image.jpg",
-  "priceRange": "€€",
   "areaServed": [
     {
       "@type": "GeoCircle",
@@ -78,20 +76,21 @@
       "name": "Mathieu"
     }
   ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 49.2942,
-    "longitude": -0.3783
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "La Conciergerie de Véro",
+    "url": "https://laconciergeriedevero.fr/"
   }
 }
 </script>
 </head>
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
 <header>
   <nav>
     <a href="index.html" class="logo">Entretien et <span>Mémoire</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="menu-principal">
       <li><a href="pages/prestations.html">Prestations</a></li>
       <li><a href="pages/zone-intervention.html">Zone d'intervention</a></li>
       <li><a href="pages/avis.html">Avis</a></li>
@@ -100,9 +99,10 @@
     <div class="nav-cta">
       <a href="pages/contact.html" class="btn btn-ghost">Nous contacter</a>
     </div>
-    <button class="burger" aria-label="Menu">☰</button>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
   </nav>
 </header>
+<main id="contenu">
 
 <section class="hero">
   <div class="wrap">
@@ -180,10 +180,10 @@ Chaque intervention est réalisée avec soin, discrétion et respect, afin de pr
       <span class="eyebrow">Zone d'intervention</span>
       <h2>Où intervenons-nous ?</h2>
 	  <div data-reveal>
-          <div id="carte-zone" style="width:40vh; height:40vh; min-height:350px; border-radius:var(--radius); overflow:hidden;"></div>
+          <div id="carte-zone" style="width:40vh; max-width:100%; height:40vh; min-height:350px; border-radius:var(--radius); overflow:hidden;"></div>
     </div>
       <div class="zone-list">
-        <span>Caen</span><span>Douvres-la-Delivrande</span><span>Luc-Sur-Mer</span>
+        <span>Caen</span><span>Douvres-la-Délivrande</span><span>Luc-sur-Mer</span>
         <span>Bernières-sur-Mer</span><span>Ranville</span><span>Mathieu</span>
         <span>+ 10 autres communes</span>
       </div>
@@ -233,7 +233,7 @@ Chaque intervention est réalisée avec soin, discrétion et respect, afin de pr
 <section id="commander">
   <div class="cta-band" data-reveal>
     <h2>Confiez-nous l'entretien</h2>
-    <p>Si vous êtes interessé ou si vous avez des questions !</p>
+    <p>Si vous êtes intéressé ou si vous avez des questions !</p>
     <div class="hero-actions" style="justify-content:center;">
       <a href="pages/contact.html" class="btn btn-primary">Nous contacter</a>
       <a href="pages/faq.html" class="btn btn-ghost">Voir la FAQ</a>
@@ -241,6 +241,7 @@ Chaque intervention est réalisée avec soin, discrétion et respect, afin de pr
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -260,7 +261,7 @@ Chaque intervention est réalisée avec soin, discrétion et respect, afin de pr
         <ul>
           <li><a href="mailto:laconciergeriedevero@gmail.com">laconciergeriedevero@gmail.com</a></li>
           <li><a href="tel:0615075833">06 15 07 58 33</a></li>
-          <li><a href="pages/contact.html">Formulaire de contact</a></li>
+          <li><a href="pages/contact.html">Nous contacter</a></li>
         </ul>
       </div>
       <div>
